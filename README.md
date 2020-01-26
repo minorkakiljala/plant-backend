@@ -60,6 +60,9 @@ This development environment provides a few useful commands for dealing with the
 # changes as you write code.
 $ npm run dev
 
+# start nodemon: You might not want to restart your docker-container every time, this simply starts the nodemon process that watches the server for changes.
+$ npm run start-nodemon
+
 # start-db: This command is run automatically as part of the dev command
 # The -d flag stands for detach. If you wish to keep a connection to your
 # development database, you may run this manually without the flag as docker-compose up

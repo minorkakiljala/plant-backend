@@ -17,20 +17,4 @@ routes.post('/v1/plants/create', (req, res) => {
     .catch(err => handleGeneralError(err, res));
 });
 
-routes.get('/v1/admin', (req, res) => {
-  const options = {
-    root: './src',
-    headers: {
-      'x-timestamp': Date.now(),
-      'x-sent': true
-    }
-  };
-  res.sendFile('/public/admin.html', options, err => {
-    if (err) {
-      console.error('Error happened', err);
-      res.status(200).send('Tapahtui virhe');
-    }
-  });
-});
-
 export default routes;

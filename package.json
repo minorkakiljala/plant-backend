@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run start-db && cross-env NODE_ENV=development nodemon --watch",
+    "dev": "npm run start-db && npm run start-nodemon",
+    "start-nodemon": "cross-env NODE_ENV=development nodemon --watch",
     "start-db": "docker-compose up -d",
     "clean-db": "shx rm -rf postgres-data",
     "build": "tsc"
@@ -23,12 +24,14 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-promise-router": "^3.0.3",
-    "nodemon": "^2.0.2",
     "path": "^0.12.7",
     "pg": "^7.17.1",
     "pg-promise": "^10.3.5",
     "shx": "^0.3.2",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
