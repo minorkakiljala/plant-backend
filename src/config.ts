@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 // This utility function is used to help use debug wether
 // Required environment variables are missing.
 const isRequired = (env: string, label?: string) => {

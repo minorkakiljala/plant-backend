@@ -1,14 +1,14 @@
-require('dotenv').config();
-
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { databaseMiddleware } from './middleware/database';
 import routes from './routes';
+import loggerMiddleware from './middleware/logger';
 
 const app = express();
 const port = 3000;
 
+app.use(loggerMiddleware);
 app.use(cors());
 app.use(bodyParser.json());
 app.use(databaseMiddleware as any);
