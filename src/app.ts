@@ -4,9 +4,10 @@ import bodyParser from 'body-parser';
 import { databaseMiddleware } from './middleware/database';
 import routes from './routes';
 import loggerMiddleware from './middleware/logger';
+import { serverPort } from './config';
 
 const app = express();
-const port = 3000;
+const port = serverPort;
 
 app.use(loggerMiddleware);
 app.use(cors());

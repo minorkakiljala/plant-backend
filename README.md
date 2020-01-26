@@ -46,6 +46,7 @@ PGUSER=plantuser
 PGPASSWORD=iflplants
 PGHOST=localhost
 PGPORT=5432
+SERVER_PORT=3001
 ```
 
 Before getting started, make sure you have the required tools installed. After you have installed the required tools on your development machine, install required npm-dependencies by running `npm install` in the root directory for the project.

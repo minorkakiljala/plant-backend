@@ -20,3 +20,4 @@ export const pgHost: string = isRequired(process.env.PGHOST, 'Postgres-host');
 
 // The as here is a typescript cast that we use to read the port as a number
 export const pgPort: number = (process.env.PGPORT || 5432) as number; // Alternative is default port for pg.
+export const serverPort: number = (process.env.SERVER_PORT || 3001) as number;
