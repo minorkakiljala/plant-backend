@@ -1,0 +1,33 @@
+{
+  "name": "flower-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run start-db && cross-env NODE_ENV=development nodemon --watch",
+    "start-db": "docker-compose up -d",
+    "clean-db": "shx rm -rf postgres-data",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/pg": "^7.14.1",
+    "@types/pg-promise": "^5.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^6.0.3",
+    "cuid": "^2.1.8",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7",
+    "pg": "^7.17.1",
+    "pg-promise": "^10.3.5",
+    "shx": "^0.3.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
