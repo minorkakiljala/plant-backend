@@ -1,4 +1,4 @@
-# The Plant Backend
+# Botanists Assistant Backend
 
 This is a simple backend implemented using express.js, PostgreSQL and docker.
 

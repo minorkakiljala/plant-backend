@@ -2,7 +2,10 @@ import router from 'express-promise-router';
 import { getPlants, createPlant } from '../core/models';
 import { createPlantFromRelation } from '../core/orm';
 
-const handleGeneralError = (err, res) => res.sendStatus(400);
+const handleGeneralError = (err, res) => {
+  console.log('Error in endpoint', err);
+  res.sendStatus(400);
+};
 
 const routes = router();
 
