@@ -91,5 +91,6 @@ Coming at a later date.
 - Track how many times different users have watered the plants.
 - Dockerize the node process.
 - Allow users to sign up with google.
+- Build an endpoint for hosting the frontend.
 
 - Use this base to build something completely different.
