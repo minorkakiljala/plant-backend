@@ -81,3 +81,15 @@ $ npm run build
 ## Running this backend in production
 
 Coming at a later date.
+
+## Improvements
+
+- Add a users table, attach plants to specific users.
+- Add user authentication.
+- Make endpoints for watering plants.
+- Make endpoints for removing plants.
+- Track how many times different users have watered the plants.
+- Dockerize the node process.
+- Allow users to sign up with google.
+
+- Use this base to build something completely different.
